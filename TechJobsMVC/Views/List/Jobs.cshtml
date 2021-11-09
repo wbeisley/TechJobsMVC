@@ -5,6 +5,7 @@
     <h1>@ViewBag.title</h1>
 
     @{
+        @if(ViewBag.jobs == "") { 
         //TODO #1: Use a loop to display job results in a table.
         @foreach (var item in ViewBag.jobs)
         {
@@ -29,6 +30,7 @@
                 </tr>
                 
             </table>
+        }
         }
     }
 
